@@ -5,4 +5,7 @@ mapped_image: /assets/images/orange.jpg
 card:
   heading: Registered card
   image: /assets/images/orange.jpg
+card_region:
+  heading: Registered card with an image region
+  image: /assets/images/blue.jpg
 ---

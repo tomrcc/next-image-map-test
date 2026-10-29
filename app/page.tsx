@@ -2,6 +2,7 @@ import fs from "node:fs";
 import matter from "gray-matter";
 import Image from "next/image";
 import MappedCard from "./components/MappedCard";
+import MappedCardWithRegion from "./components/MappedCardWithRegion";
 import { resolveImage } from "../lib/images";
 
 export default function Page() {
@@ -28,6 +29,11 @@ export default function Page() {
       <h2>C. Mapped image, registered component</h2>
       <editable-component data-component="mapped-card" data-prop="card">
         <MappedCard {...data.card} />
+      </editable-component>
+
+      <h2>D. Mapped image, registered component with an image region inside</h2>
+      <editable-component data-component="mapped-card-region" data-prop="card_region">
+        <MappedCardWithRegion {...data.card_region} />
       </editable-component>
     </>
   );
