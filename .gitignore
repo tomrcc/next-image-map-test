@@ -1,0 +1,5 @@
+node_modules/
+.next/
+out/
+upload-me/
+next-env.d.ts

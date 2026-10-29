@@ -1,0 +1,27 @@
+collections_config:
+  pages:
+    path: content/pages
+    url: /
+    disable_add: true
+
+paths:
+  static: public
+  uploads: public/images
+
+_inputs:
+  public_image:
+    type: image
+  mapped_image:
+    type: image
+    options:
+      paths:
+        uploads: /assets/images
+        static: ""
+  image:
+    type: image
+    options:
+      paths:
+        uploads: /assets/images
+        static: ""
+  heading:
+    type: text
